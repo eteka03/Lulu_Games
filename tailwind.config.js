@@ -6,10 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {
-      "gridTemplateRows":{
-        "layout": "minmax(0,.3fr), minmax(0, 3fr), minmax(0,.5fr) "
-      }
+      gridTemplateRows: {
+        layout: "minmax(0,.3fr), minmax(0, 3fr), minmax(0,.4fr) ",
+      },
     },
   },
   plugins: [],
-}
+};
