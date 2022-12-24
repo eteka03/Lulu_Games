@@ -8,9 +8,9 @@ const Navbar = () => {
   }, [setIsActiveMenu]);
 
   return (
-    <header className="w-full md:pr-8 md:pl-8 bg-blue-300">
-      <nav className="flex flex-row w-full h-full  justify-between items-center md:pr-5 md:pl-5">
-        <div>❤</div>
+    <header className="w-full bg-blue-300">
+      <nav className="flex flex-row w-full h-full  justify-between items-center md:pr-6 md:pl-6">
+        <div className="pl-2 md:pl-0">❤</div>
         <div
           className={`flex flex-col md:flex-row md:w-auto  md:relative md:z-0  ${
             isActiveMenu && "absolute top-0 z-50 pt-2 w-full"
