@@ -15,8 +15,8 @@ const Hero = () => {
             className="w-full"
           />
         </div>
-        <div className="md:flex-grow flex flex-col justify-center text-center">
-          <Text type="hero">Bienvenue dans mon mini monde</Text>
+        <div className="md:flex-grow flex flex-col justify-center text-center lg:max-w-[65%]">
+          <Text type="hero">Bienvenue dans mon mini royaume !</Text>
         </div>
       </div>
     </Container>
