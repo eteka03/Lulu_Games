@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       gridTemplateRows: {
-        layout: "minmax(0,.3fr), minmax(0, 3fr), minmax(0,.4fr) ",
+        layout: "minmax(0,.3fr), minmax(0, 3fr), minmax(0,.3fr) ",
       },
     },
   },
