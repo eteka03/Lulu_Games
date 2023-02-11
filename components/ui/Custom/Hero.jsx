@@ -13,10 +13,13 @@ const Hero = () => {
             src={heroImage}
             alt="image de ma personne"
             className="w-full"
+            priority
           />
         </div>
         <div className="md:flex-grow flex flex-col justify-center text-center lg:max-w-[65%]">
-          <Text type="hero">Bienvenue dans mon mini royaume !</Text>
+          <Text type="hero" className="">
+            Bienvenue dans mon mini royaume !
+          </Text>
         </div>
       </div>
     </Container>

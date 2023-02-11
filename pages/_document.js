@@ -14,6 +14,13 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
           rel="stylesheet"
         />
+        <link
+          rel="preload"
+          as="font"
+          href="/fonts/RocherColorGX.woff2"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
       </Head>
       <body>
         <Main />
