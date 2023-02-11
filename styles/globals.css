@@ -10,9 +10,14 @@
   font-display: auto; /* or block, swap, fallback, optional */
   src: url("../public/fonts/RocherColorGX.woff2");
 }
+
 @font-palette-values --Purples {
   font-family: Rocher;
   base-palette: 6;
+}
+@font-palette-values --Purples-one {
+  font-family: Rocher;
+  override-colors: 0 #a264cc, 1 #b2a4ff, 3 #b32dda, 4 #b81de6;
 }
 
 :root {
@@ -74,7 +79,7 @@ body {
   overflow-x: hidden;
   height: 100%;
   font-size: 62.5%;
-  background-color: var(--bg-coffee-two);
+  background-color: var(--bg-orange);
 }
 
 #__next {
@@ -85,6 +90,13 @@ a {
   color: inherit;
   text-decoration: none;
 }
+img.hero {
+  max-inline-size: 100%;
+  block-size: auto;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  object-position: center center;
+}
 .bg-polygon {
   clip-path: var(--clip-polygon);
 }
@@ -93,22 +105,37 @@ a {
   font-family: "Rocher";
   font-palette: --Purples;
   font-variation-settings: "BVEL" 80, "SHDW" 50;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
+}
+.text.hero.fantasy {
+  font-family: "Rocher";
+  font-palette: --Purples-one;
+  font-variation-settings: "BVEL" 0, "SHDW" 100;
+  font-size: 2.9rem;
 }
 
 @media (min-width: 40em) {
   :root {
-    --fs-600: clamp(1vw, 1.2vw, 3vw);
+    --fs-600: clamp(1rem, 0.75rem + 1.5vw, 2rem);
     --fs-400: 16px;
   }
-
   .text.hero {
-    font-size: 4rem;
+    font-size: 3rem;
+  }
+  .text.hero.fantasy {
+    font-size: 3.9rem;
   }
 }
 
 @media (min-width: 80em) {
+  :root {
+    --fs-600: clamp(1vw, 1.2vw, 3vw);
+    --fs-400: 16px;
+  }
   .text.hero {
-    font-size: 6rem;
+    font-size: 5rem;
+  }
+  .text.hero.fantasy {
+    font-size: 5.9rem;
   }
 }

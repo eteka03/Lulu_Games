@@ -5,6 +5,8 @@ const Text = ({ type, className, children }) => {
     let defaultReturn = <h1>undefined</h1>;
     if (type === "hero")
       return <h1 className={`${className} text hero`}>{children}</h1>;
+    if (type === "hero-fantasy")
+      return <h1 className={`${className} text hero fantasy`}>{children}</h1>;
     return defaultReturn;
   }, []);
   return <>{display()}</>;
