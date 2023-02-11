@@ -105,13 +105,13 @@ img.hero {
   font-family: "Rocher";
   font-palette: --Purples;
   font-variation-settings: "BVEL" 80, "SHDW" 50;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 .text.hero.fantasy {
   font-family: "Rocher";
   font-palette: --Purples-one;
   font-variation-settings: "BVEL" 0, "SHDW" 100;
-  font-size: 2.9rem;
+  font-size: 6rem;
 }
 
 @media (min-width: 40em) {
@@ -120,10 +120,10 @@ img.hero {
     --fs-400: 16px;
   }
   .text.hero {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .text.hero.fantasy {
-    font-size: 3.9rem;
+    font-size: 8rem;
   }
 }
 
@@ -133,9 +133,9 @@ img.hero {
     --fs-400: 16px;
   }
   .text.hero {
-    font-size: 5rem;
+    font-size: 3.5rem;
   }
   .text.hero.fantasy {
-    font-size: 5.9rem;
+    font-size: 10rem;
   }
 }
