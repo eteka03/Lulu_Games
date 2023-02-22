@@ -19,7 +19,11 @@ const Navbar = () => {
           className={`md:block pl-2 md:pl-0 ${isActiveMenu ? "hidden" : ""}`}
         >
           <Link href="/">
-            <Image src={logo} alt="transparent logo" className="h-full w-32" />
+            <Image
+              src={logo}
+              alt="transparent logo"
+              className="h-full w-32 m-h-[40px] m-w-[40px]"
+            />
           </Link>
         </div>
         <div

@@ -114,6 +114,15 @@ img.hero {
   font-size: 6rem;
 }
 
+.hero-button {
+  background-image: url("../public/candy.svg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 250px;
+}
+
 @media (min-width: 40em) {
   :root {
     --fs-600: clamp(1rem, 0.75rem + 1.5vw, 2rem);

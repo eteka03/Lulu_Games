@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Container from "../Container/Container";
 import heroImage from "../../../public/hero-img.jpg";
+import candy from "../../../public/candy.svg";
 import Text from "../Text/Text";
 
 const Hero = () => {
@@ -23,7 +24,11 @@ const Hero = () => {
           <Text type="hero-fantasy" className="">
             Luland !
           </Text>
-          <button>On Commence</button>
+          <div className="">
+            <button type="button" className="hero-button">
+              GO!
+            </button>
+          </div>
         </div>
       </div>
     </Container>
